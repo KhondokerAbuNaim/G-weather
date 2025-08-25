@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans Bengali", sans-serif;
+  background: linear-gradient(to bottom, #2563eb, #0f172a);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  backdrop-filter: blur(12px);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box {
+  margin: 15px 0;
+}
+
+.search-box input {
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  margin-left: 5px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.weather-box h2 {
+  margin: 10px 0;
+}
+
+.dark {
+  background: linear-gradient(to bottom, #0f172a, #1e293b);
+}

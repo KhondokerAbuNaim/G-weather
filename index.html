@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>গুগল আবহাওয়া ক্লোন</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🌤️ আবহাওয়া</h1>
+      <button id="darkModeToggle">🌙</button>
+    </header>
+
+    <main>
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="শহরের নাম লিখুন...">
+        <button id="searchBtn">🔍</button>
+        <button id="gpsBtn">📍</button>
+      </div>
+
+      <div class="weather-box">
+        <h2 id="cityName">ঢাকা</h2>
+        <p id="description">লোড হচ্ছে...</p>
+        <h3 id="temperature">--°C</h3>
+        <button id="unitToggle">°C/°F</button>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</body>
+</html>
